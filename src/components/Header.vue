@@ -17,5 +17,6 @@
         padding-left: 64px;
         padding-right: 64px;
         position: fixed;
+        top:0;
     }
 </style>

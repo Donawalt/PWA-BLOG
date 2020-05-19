@@ -11,6 +11,6 @@
         border-top: 4px solid $accent-color;
         padding-left: 64px;
         padding-right: 64px;
-        position: fixed;
+        bottom: 0;
     }
 </style>
