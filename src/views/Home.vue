@@ -19,10 +19,9 @@
     </section>
     <section class="h-theme">
       <img alt="" src="../assets/images/arbitrage.png">
-      <router-link to=''>
-         <Button>Découvrir les règles</Button>
-      </router-link>
-      <router-link to='/'>
+      <router-link to='/rules'>
+        <Button>Découvrir les règles</Button>      </router-link>
+      <router-link to='/athletes'>
         <Button>Les derniers athlètes</Button>
       </router-link>
       <img alt="" src='../assets/images/athletes.png'>
