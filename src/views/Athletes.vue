@@ -21,31 +21,47 @@
       </p>
       <form action>
         <h2>Athlete individuel ou en équipe</h2>
-        <input type="text" />
-        <h2>Nom et Prénom</h2>
-        <input type="text" />
-        <h2>Adresse email</h2>
-        <input type="text" />
-        <h2>Pays et Ville</h2>
-        <input type="text" />
-        <h2>Liens vers vos vidéos (veuillez en fournir au moins une)</h2>
-        <p>
-          Ce que nous voulons voir:
-          - La vitesse
-          - Agilité
-          - Capacité à négocier des obstacles
-          Ce que nous voulons vraiment voir:
-          Images de vous impliqué dans une poursuite de 20 secondes.
-          Trouvez un endroit sympa.
-          Trouvez quelqu'un pour vous poursuivre.
-          Enregistrez-le.
-          Mettez-le en ligne.
-          Envoyez-nous le lien.
-          Facile.
-        </p>
-        <input type="text" />
-        <h2>Je dois participer car...</h2>
-        <input type="text" class="input-big" />
+        <div class="input-form">
+          <input type="text" />
+          <h2>Nom et Prénom</h2>
+        </div>
+        <div class="input-form">
+          <input type="text" />
+          <h2>Adresse email</h2>
+        </div>
+        <div class="input-form">
+          <input type="text" />
+          <h2>Pays et Ville</h2>
+        </div>
+        <div class="input-form">
+          <input type="text" />
+          <h2>Liens vers vos vidéos</h2>
+        </div>
+        <p>(veuillez en fournir au moins une)</p>
+        <div class="rules">
+          <p>Ce que nous voulons voir:</p>
+          <p>- La vitesse</p>
+          <p>- Agilité</p>
+          <p>- Capacité à négocier des obstacles</p>
+        </div>
+        <div class="rules">
+          <div class="input-form">
+            <p>Ce que nous voulons vraiment voir:</p>
+            <p>Images de vous impliqué dans une poursuite de 20 secondes.</p>
+            <p>Trouvez un endroit sympa.</p>
+            <p>Trouvez quelqu'un pour vous poursuivre.</p>
+            <p>Enregistrez-le.</p>
+            <p>Mettez-le en ligne.</p>
+            <p>Envoyez-nous le lien.</p>
+            <p>Facile.</p>
+          </div>
+
+          <input type="text" />
+        </div>
+        <div class="input-form">
+          <h2>Je dois participer car...</h2>
+          <input type="text" class="input-big" />
+        </div>
         <h2></h2>
         <input type="button" value="M'inscrire" class="button" />
       </form>
@@ -54,7 +70,7 @@
 </template>
 
 <style scoped lang="scss">
-body {
+.body {
   display: flex;
   flex-direction: column;
   width: 30%;
@@ -74,19 +90,29 @@ body {
   p {
     font-size: 15px;
     font-weight: bold;
-    margin-bottom: 32px;
+    margin-bottom: 2px;
   }
   .grid-container {
-    margin-left: 30%;
     grid-gap: 16px;
-    width: 300px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     grid-template-areas: ". . ." ". . .";
     margin-bottom: 60px;
   }
-
+  .input-form {
+    text-align: left;
+    margin-left: 20%;
+    margin-top: 10px;
+    .rules {
+      text-align: left;
+      margin-left: 10%;
+      margin-top: 10px;
+      p {
+        margin-bottom: 4px;
+      }
+    }
+  }
   input {
     width: 300px;
     height: 24px;
@@ -100,6 +126,7 @@ body {
     border-radius: 8px;
     background-color: transparent;
     color: white;
+    margin-bottom: 20px;
   }
 }
 </style>
