@@ -1,10 +1,10 @@
 <template>
     <header id='header'>
-        <router-link to='/'>
-            <img alt='' src='' />
+        <router-link to='/' class="elem">
+            <img alt='World Chase Tag Logo' src='../assets/logo-header.png' />
         </router-link>
-        <div>
-            <img alt='' src='' />
+        <div class="elem">
+            <img alt='Menu Burger Icon' src='../assets/menu-header.png' />
         </div>
     </header>
 </template>
@@ -13,10 +13,14 @@
     #header{
         height: 64px;
         width: 100vw;
+        display: flex;
+        justify-content: space-between;
         border-bottom: 4px solid $accent-color;
-        padding-left: 64px;
-        padding-right: 64px;
         position: fixed;
         top:0;
+        .elem{
+            margin-left:64px;
+            margin-right: 64px;
+        }
     }
 </style>

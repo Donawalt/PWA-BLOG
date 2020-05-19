@@ -1,16 +1,22 @@
 <template>
     <footer id='footer'>
-        <p>Footer</p>
+        <router-link to='/' class="elem">
+            <img alt='World Chase Tag Logo' src='../assets/logo-header.png' />
+        </router-link>
+        <div>
+            <p>Mentions légales | Politiques de confidentialites | Gestion des Cookies</p>
+        </div>
     </footer>
 </template>
 
 <style lang="scss">
     #footer{
-        height: 64px;
+        height: 108px;
         width: 100vw;
         border-top: 4px solid $accent-color;
-        padding-left: 64px;
-        padding-right: 64px;
         bottom: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
     }
 </style>
