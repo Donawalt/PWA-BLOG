@@ -1,7 +1,7 @@
 <template>
     <footer id='footer'>
         <router-link to='/' class="elem">
-            <img alt='World Chase Tag Logo' src='../assets/logo-header.png' />
+            <img alt='World Chase Tag Logo' src='../assets/images/logo-header.png' />
         </router-link>
         <div>
             <p>Mentions légales | Politiques de confidentialites | Gestion des Cookies</p>
