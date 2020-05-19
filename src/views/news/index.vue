@@ -2,7 +2,7 @@
   <div class="newPost">
     <template v-if="post">
       <div class='post'>
-       <section class='post-header' :style="{ backgroundImage: 'linear-gradient(180deg, rgba(0, 0, 0, 0) 47.4%, #1F1F1F 100%), linear-gradient(0deg, rgba(0, 0, 0, 0.23), rgba(0, 0, 0, 0.23)),  url(' + require('@/assets/actu.png') + ')'}">
+       <section class='post-header' :style="{ backgroundImage: 'linear-gradient(180deg, rgba(0, 0, 0, 0) 47.4%, #1F1F1F 100%), linear-gradient(0deg, rgba(0, 0, 0, 0.23), rgba(0, 0, 0, 0.23)),  url(' + require('@/assets/images/actu.png') + ')'}">
          <h1>{{ post.title }}</h1>
        </section>
        <div class="content">{{ post.body}}</div>

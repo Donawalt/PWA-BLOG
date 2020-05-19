@@ -3,7 +3,7 @@
     <section class="h-header">
       <div class="h-header-bg">
         <video autoplay muted loop>
-          <source src='../assets/WCT-header.mp4' type='video/mp4'>
+          <source src='../assets/videos/WCT-header.mp4' type='video/mp4'>
         </video>
       </div>
       <div class="h-header-content">
@@ -15,23 +15,23 @@
     </section>
     <section class="h-intro">
       <p>Le « chase tag » ressemble au jeu de notre enfance : un poursuiveur doit attraper un poursuivi et le toucher pour le capturer. Une capture rapporte un point, une évasion en rapporte trois. Les matchs peuvent se faire en one-on-one ou en équipes.</p> 
-      <img alt="Enfants jouant au chase tag" src="../assets/intro.png" />
+      <img alt="Enfants jouant au chase tag" src="../assets/images/intro.png" />
     </section>
     <section class="h-theme">
-      <img alt="" src="../assets/arbitrage.png">
+      <img alt="" src="../assets/images/arbitrage.png">
       <router-link to=''>
          <Button>Découvrir les règles</Button>
       </router-link>
       <router-link to='/'>
         <Button>Les derniers athlètes</Button>
       </router-link>
-      <img alt="" src='../assets/athletes.png'>
+      <img alt="" src='../assets/images/athletes.png'>
     </section>
     <section class='h-actu'>
       <h3>LES DERNIERES ACTUALITÉS</h3>
       <div class='h-actu-grid'>
         <template v-for="post in posts">
-          <router-link :to='"/news/" + post.id' :key='post.id' :style="{ backgroundImage: 'linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0) 61.46%, #000000 100%), url(' + require('@/assets/actu.png') + ')'}" class='card'>
+          <router-link :to='"/news/" + post.id' :key='post.id' :style="{ backgroundImage: 'linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0) 61.46%, #000000 100%), url(' + require('@/assets/images/actu.png') + ')'}" class='card'>
             <div class='actu-card-background'></div>
             <div class='actu-card-info'>
               <p class='date'>24 janvier 2020</p>
