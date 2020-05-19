@@ -16,7 +16,9 @@
         display: flex;
         justify-content: space-between;
         border-bottom: 4px solid $accent-color;
+        background-color: $background-color;
         position: fixed;
+        z-index: 100;
         top:0;
         .elem{
             margin-left:64px;
