@@ -4,10 +4,21 @@
             <img alt='World Chase Tag Logo' src='../assets/images/logo-header.png' />
         </router-link>
         <div class="elem">
-            <img alt='Menu Burger Icon' src='../assets/images/menu-header.png' />
+            <img v-on:click="showMenu" alt='Menu Burger Icon' src='../assets/images/menu-header.png' />
         </div>
     </header>
 </template>
+
+<script>
+export default {
+    methods: {
+        showMenu: function () {
+          document.querySelector(".menu").style.display = "block";
+          document.querySelector(".menu").style.pointerEvents = "all";
+        }
+    }
+}
+</script>
 
 <style lang='scss'>
     #header{

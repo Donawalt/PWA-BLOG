@@ -42,7 +42,7 @@
         </template>
       </div>
       <Button>
-        <nuxt-link to='/'>Voir toutes les actualités</nuxt-link>
+        <router-link to='/'>Voir toutes les actualités</router-link>
       </Button>
     </section>
   </div>
