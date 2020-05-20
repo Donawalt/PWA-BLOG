@@ -151,7 +151,11 @@
       <a href="https://www.instagram.com/worldchasetag/" target="_blank" title="Notre Instagram">
         <img alt src="../assets/images/inst.png" />
       </a>
-      <a href="https://www.youtube.com/channel/UCvo8BitSExXgP-eYjXwJvgw" target="_blank" title="Notre Youtube">
+      <a
+        href="https://www.youtube.com/channel/UCvo8BitSExXgP-eYjXwJvgw"
+        target="_blank"
+        title="Notre Youtube"
+      >
         <img alt src="../assets/images/youtube.png" />
       </a>
       <a href="https://twitter.com/worldchasetag" target="_blank" title="Notre Twitter">
@@ -257,6 +261,9 @@ export default {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    @media (max-width: 748px) {
+      grid-template-columns: 1fr;
+    }
     &-title {
       max-width: 752px;
       font-size: 22px;
@@ -330,7 +337,10 @@ export default {
     .h-actu-grid {
       display: grid;
       grid-template-columns: 1fr 1fr;
-      grid-template-rows: 304px 304px;
+      @media (max-width: 748px) {
+        grid-template-columns: 1fr;
+      }
+      grid-auto-rows: 304px;
       grid-column-gap: 16px;
       grid-row-gap: 24px;
       margin-bottom: 32px;
