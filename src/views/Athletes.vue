@@ -6,12 +6,48 @@
     <section class="body">
       <h1>Nos athlètes</h1>
       <div class="grid-container">
-        <img alt src="../assets/athlete1.png" />
-        <img alt src="../assets/athlete2.png" />
-        <img alt src="../assets/athlete3.png" />
-        <img alt src="../assets/athlete4.png" />
-        <img alt src="../assets/athlete5.png" />
-        <img alt src="../assets/athlete6.png" />
+        <div class="overlay">
+          <img alt src="../assets/athlete1.png" />
+          <div class="text">
+            <p>Frank Stelton</p>
+            <p>USA</p>
+          </div>
+        </div>
+        <div class="overlay">
+          <img alt src="../assets/athlete2.png" />
+          <div class="text">
+            <p>Carl Izlo</p>
+            <p>Allemagne</p>
+          </div>
+        </div>
+        <div class="overlay">
+          <img alt src="../assets/athlete3.png" />
+          <div class="text">
+            <p>Charles-André Demé</p>
+            <p>France</p>
+          </div>
+        </div>
+        <div class="overlay">
+          <img alt src="../assets/athlete4.png" />
+          <div class="text">
+            <p>Ben Tisyaou</p>
+            <p>USA</p>
+          </div>
+        </div>
+        <div class="overlay">
+          <img alt src="../assets/athlete5.png" />
+          <div class="text">
+            <p>Camila Vargas</p>
+            <p>Russie</p>
+          </div>
+        </div>
+        <div class="overlay">
+          <img alt src="../assets/athlete6.png" />
+          <div class="text">
+            <p>Dominic Yeou</p>
+            <p>Maroc</p>
+          </div>
+        </div>
       </div>
       <h1>Faites parties de nos athletes</h1>
       <p>
@@ -99,7 +135,34 @@
     grid-template-rows: 1fr 1fr;
     grid-template-areas: ". . ." ". . .";
     margin-bottom: 60px;
+
+    img {
+      position: relative;
+    }
+    .text {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+      color: #fff;
+      opacity: 0;
+    }
+
+    .text:hover {
+      transition: all 0.8s ease;
+      background: rgba(0, 0, 0, 0.6);
+      opacity: 1;
+    }
+    .overlay:hover {
+      cursor: pointer;
+    }
+    div:hover div {
+      visibility: visible;
+      opacity: 0.7;
+    }
   }
+
   .input-form {
     text-align: left;
     margin-left: 20%;
