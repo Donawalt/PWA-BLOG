@@ -2,7 +2,7 @@
   <div class='actu'>
       <h1>Les Actualités</h1>
       <div class='grid'>
-        <div class='card' v-for="post in posts" :key='post.id'>
+        <div class='card' v-for="post in posts" :key='post.id' :style="{ backgroundImage: 'linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0) 61.46%, #000000 100%), url(' + require('@/assets/images/actu.png') + ')'}">
             <router-link :to='"/news/" + post.id'>
                 {{ post.title }}
             </router-link>
@@ -49,17 +49,26 @@ export default {
 
       display: grid;
       grid-template-columns: 1fr 1fr;
+      @media (max-width: 748px) {
+        grid-template-columns: 1fr;
+      }
       grid-auto-rows: 300px;
       grid-column-gap: 16px;
       grid-row-gap: 24px;
 
 
       .card{
-        border: $accent-color solid 2px;
+        position: relative;
       }
 
       a{
+        position: absolute;
+        margin: 16px;
+        margin-bottom: 0;
+        bottom: 16px;
+        text-align:left;
         color: white;
+        left: 0;
       }
   }
 </style>
