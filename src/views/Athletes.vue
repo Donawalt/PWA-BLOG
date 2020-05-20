@@ -111,7 +111,7 @@
   flex-direction: column;
   margin-left: $margin-content;
   margin-right: $margin-content;
-  h1{
+  h1 {
     font-size: $title-section_size;
     line-height: 35px;
     font-weight: bold;
@@ -125,14 +125,14 @@
   p {
     font-size: 15px;
     font-weight: bold;
-    margin-bottom: 32px; 
+    margin-bottom: 32px;
     text-align: left;
     line-height: 20px;
   }
-  iframe{
+  iframe {
     margin: auto;
   }
-  form{
+  form {
     width: 80%;
     margin: auto;
   }
@@ -159,7 +159,6 @@
 
     .text:hover {
       transition: all 0.8s ease;
-      background: rgba(0, 0, 0, 0.6);
       opacity: 1;
     }
     .overlay:hover {
