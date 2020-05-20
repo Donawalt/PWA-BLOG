@@ -73,10 +73,9 @@
 .body {
   display: flex;
   flex-direction: column;
-  width: 30%;
-  margin-right: auto;
-  margin-left: auto;
-  h1 {
+  margin-left: $margin-content;
+  margin-right: $margin-content;
+  h1{
     font-size: $title-section_size;
     line-height: 35px;
     font-weight: bold;
@@ -90,7 +89,16 @@
   p {
     font-size: 15px;
     font-weight: bold;
-    margin-bottom: 2px;
+    margin-bottom: 32px; 
+    text-align: left;
+    line-height: 20px;
+  }
+  iframe{
+    margin: auto;
+  }
+  form{
+    width: 80%;
+    margin: auto;
   }
   .grid-container {
     grid-gap: 16px;
@@ -102,7 +110,6 @@
   }
   .input-form {
     text-align: left;
-    margin-left: 20%;
     margin-top: 10px;
     .rules {
       text-align: left;
@@ -114,7 +121,7 @@
     }
   }
   input {
-    width: 300px;
+    width: 100%;
     height: 24px;
   }
   .input-big {

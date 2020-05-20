@@ -41,7 +41,7 @@
         </template>
       </div>
       <Button>
-        <router-link to='/'>Voir toutes les actualités</router-link>
+        <router-link to='/news'>Voir toutes les actualités</router-link>
       </Button>
     </section>
   </div>
@@ -72,6 +72,9 @@ export default {
 
 <style lang="scss">
 .home {
+  a{
+    text-decoration: none;
+  }
   min-height: 100vh;
   width: 100vw;
   overflow: hidden;

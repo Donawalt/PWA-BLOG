@@ -46,9 +46,8 @@
 .body {
   display: flex;
   flex-direction: column;
-  width: 30%;
-  margin-right: auto;
-  margin-left: auto;
+  margin-left: $margin-content;
+  margin-right: $margin-content;
   h1{
     font-size: $title-section_size;
     line-height: 35px;
@@ -64,6 +63,11 @@
     font-size: 15px;
     font-weight: bold;
     margin-bottom: 32px; 
+    text-align: left;
+    line-height: 20px;
+  }
+  iframe{
+    margin: auto;
   }
 }
 </style>
