@@ -15,36 +15,57 @@ const routes = [
 		path: "/",
 		name: "Home",
 		component: Home,
+		meta: {
+			title: 'World Chase Tag'
+		}
 	},
 	{
 		path: "/news",
 		name: "News",
 		component: News,
+		meta: {
+			title: 'World Chase Tag || Actualités'
+		}
 	},
 	{
 		path: "/events",
 		name: "Events",
 		component: Events,
+		meta: {
+			title: 'World Chase Tag || Événements'
+		}
 	},
 	{
 		path: "/athletes",
 		name: "Athletes",
 		component: Athletes,
+		meta: {
+			title: 'World Chase Tag || Les Athlètes'
+		}
 	},
 	{
 		path: "/rules",
 		name: "Rules",
 		component: Rules,
+		meta: {
+			title: 'World Chase Tag || Les Règles'
+		}
 	},
 	{
 		path: "/events/:slug",
 		name: "Event",
 		component: EventArticle,
+		meta: {
+			title: 'World Chase Tag || Article'
+		}
 	},
 	{
 		path: "/news/:slug",
 		name: "New",
 		component: NewArticle,
+		meta: {
+			title: 'World Chase Tag || Article'
+		}
 	},
 ];
 

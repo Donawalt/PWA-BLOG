@@ -18,7 +18,12 @@ export default {
     Header,
     Footer, 
     Menu
-  }
+  },
+  watch: {
+      '$route' (to) {
+        document.title = to.meta.title || 'WORLD CHASE TAG'
+      }
+    },
 }
 </script>
 
