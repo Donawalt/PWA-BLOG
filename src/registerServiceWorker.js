@@ -12,6 +12,16 @@ if (process.env.NODE_ENV === 'production') {
     },
     registered () {
       console.log('Service worker has been registered.')
+      Notification.requestPermission().then((result) => {
+        if(result === "granted") {
+          console.log('notification accepter')
+          // const subscription = await serviceWorker.pushManager.subscribe({ userVisibleOnly: true, applicationServerKey: urlBase64ToUint8Array(window.publicKey) });
+          // let keys = subscription.toJSON().keys;
+        }
+        else {
+          console.log('notification refuse')
+        }
+      })
     },
     cached () {
       console.log('Content has been cached for offline use.')
