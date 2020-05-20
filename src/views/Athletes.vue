@@ -142,10 +142,10 @@
     .text {
       position: relative;
       display: flex;
-      flex-direction: column;
       justify-content: center;
       text-align: center;
       color: #fff;
+      flex-direction: column;
       opacity: 0;
     }
 
