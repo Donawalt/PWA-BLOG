@@ -134,6 +134,9 @@ export default {
     width: auto;
     display: grid;
     grid-template-columns: 1fr 1fr;
+    @media (max-width: 748px) {
+      grid-template-columns: 1fr;
+    }
     grid-gap: 64px;
     p{
       text-align: left;
@@ -180,7 +183,10 @@ export default {
     .h-actu-grid{
       display: grid;
       grid-template-columns: 1fr 1fr;
-      grid-template-rows: 304px 304px;
+      @media (max-width: 748px) {
+        grid-template-columns: 1fr;
+      }
+      grid-auto-rows: 304px;
       grid-column-gap: 16px;
       grid-row-gap: 24px;
       margin-bottom: 32px;
